@@ -26,7 +26,7 @@
                             <p>Browse from {{ $productCount }} latest items</p>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="row">
                     <!--? Left content -->
@@ -69,7 +69,7 @@
                                             </div>
                                         </div>
                                         <div class="popular-caption">
-                                         <h3><a href="product_details.html">{{ $item->produk }}</a></h3>
+                                         <h3><a href="{{ route('detailprod', $item->id) }}">{{ $item->produk }}</a></h3>
                                          <div class="rating mb-10">
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>

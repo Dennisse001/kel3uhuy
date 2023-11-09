@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\DetailProdController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\EditUserController;
@@ -82,6 +83,9 @@ Route::get('/about', function () {
 // Route Shop
 Route::get('/shop', [ShopProdController::class, 'shop'])->name('shop');
 Route::get('/search', [ShopProdController::class, 'search'])->name('search');
+
+//Route DetailProduk
+Route::get('/produk/{id}', [DetailProdController::class],'detail_produk')->name('detailprod');
 
 
 
